@@ -5,9 +5,8 @@ import Header from './components/header/Header.jsx';
 import Home from './components/home/Home.jsx'
 import About from './components/about/About.jsx';
 import Skills from './components/skills/Skills.jsx';
-// import Service from './components/servicess/Services.jsx';
+import Service from './components/services/Services.jsx';
 import Work from './components/work/Work.jsx';
-// import Testimonials from '../components/testimonials/Testimonials';
 import Contact from './components/contact/Contact.jsx';
 import Footer from './components/footer/Footer.jsx';
 import ScrollUp from './components/scrollup/ScrollUp';
@@ -300,13 +299,10 @@ function App() {
                 <Home />
                 <About />
                 <Skills />
-                {/*<Service />*/}
+                <Service />
                 <Work />
                 <Contact />
 
-                {/*<Qualification />*/}
-
-                {/*<Testimonials />*/}
 
             </main>
             <Footer />
