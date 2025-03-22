@@ -4,12 +4,12 @@ import { motion } from 'framer-motion';
 import Header from './components/header/Header.jsx';
 import Home from './components/home/Home.jsx'
 import About from './components/about/About.jsx';
-// import Skills from '../components/skills/Skills';
-// import Experience from '../components/experience/Experience';
+import Skills from './components/skills/Skills.jsx';
+// import Service from './components/servicess/Services.jsx';
 // import Qualification from '../components/qualification/Qualification';
 // import Work from '../components/work/Work';
 // import Testimonials from '../components/testimonials/Testimonials';
-// import Contact from '../components/contact/Contact';
+import Contact from './components/contact/Contact.jsx';
 // import Footer from '../components/footer/Footer';
 // import ScrollUp from '../components/scrollup/ScrollUp';
 
@@ -300,13 +300,14 @@ function App() {
             <main className='main'>
                 <Home />
                 <About />
-                {/*<Work />*/}
-                {/*<Skills />*/}
-                {/*<Experience />*/}
+                <Skills />
+                {/*<Service />*/}
+                <Contact />
+
                 {/*<Qualification />*/}
 
                 {/*<Testimonials />*/}
-                {/*<Contact />*/}
+
             </main>
             {/*<Footer />*/}
             {/*<ScrollUp />*/}
