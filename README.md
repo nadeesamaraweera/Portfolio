@@ -3,7 +3,7 @@
 Welcome to my personal portfolio website! This project is built using React.js and standard CSS. It serves as a showcase for my skills, projects, and achievements.
 
 ## Live Demo 🌍
-[Visit My Portfolio](https://nadeesamaraweera.vercel.app//)
+[Visit My Portfolio](https://nadeesamaraweera.netlify.app/)
 
 ## Features ✨
 - **Interactive UI** 🎨: Smooth navigation across sections with a modern, clean design.
