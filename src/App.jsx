@@ -6,11 +6,10 @@ import Home from './components/home/Home.jsx'
 import About from './components/about/About.jsx';
 import Skills from './components/skills/Skills.jsx';
 // import Service from './components/servicess/Services.jsx';
-// import Qualification from '../components/qualification/Qualification';
-// import Work from '../components/work/Work';
+import Work from './components/work/Work.jsx';
 // import Testimonials from '../components/testimonials/Testimonials';
 import Contact from './components/contact/Contact.jsx';
-// import Footer from '../components/footer/Footer';
+import Footer from './components/footer/Footer.jsx';
 // import ScrollUp from '../components/scrollup/ScrollUp';
 
 function App() {
@@ -302,6 +301,7 @@ function App() {
                 <About />
                 <Skills />
                 {/*<Service />*/}
+                <Work />
                 <Contact />
 
                 {/*<Qualification />*/}
@@ -309,7 +309,7 @@ function App() {
                 {/*<Testimonials />*/}
 
             </main>
-            {/*<Footer />*/}
+            <Footer />
             {/*<ScrollUp />*/}
         </>
     );
