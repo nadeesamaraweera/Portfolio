@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import Header from './components/header/Header.jsx';
 import Home from './components/home/Home.jsx'
-// import About from '../components/about/About';
+import About from './components/about/About.jsx';
 // import Skills from '../components/skills/Skills';
 // import Experience from '../components/experience/Experience';
 // import Qualification from '../components/qualification/Qualification';
@@ -299,11 +299,12 @@ function App() {
             <Header />
             <main className='main'>
                 <Home />
+                <About />
                 {/*<Work />*/}
                 {/*<Skills />*/}
                 {/*<Experience />*/}
                 {/*<Qualification />*/}
-                {/*<About />*/}
+
                 {/*<Testimonials />*/}
                 {/*<Contact />*/}
             </main>
