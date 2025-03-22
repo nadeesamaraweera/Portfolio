@@ -10,7 +10,7 @@ import Work from './components/work/Work.jsx';
 // import Testimonials from '../components/testimonials/Testimonials';
 import Contact from './components/contact/Contact.jsx';
 import Footer from './components/footer/Footer.jsx';
-// import ScrollUp from '../components/scrollup/ScrollUp';
+import ScrollUp from './components/scrollup/ScrollUp';
 
 function App() {
     const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -310,7 +310,7 @@ function App() {
 
             </main>
             <Footer />
-            {/*<ScrollUp />*/}
+            <ScrollUp />
         </>
     );
 }
