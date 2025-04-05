@@ -119,7 +119,7 @@
 .home__social {
     display: grid;
     grid-template-columns: max-content;
-    row-gap: 1.5rem;
+    row-gap: 1.7rem;
     position: relative;
     z-index: 10;
     right: 60px;
@@ -130,23 +130,24 @@
     font-size: 1.25rem;
     color: #ffffff;
     transition: all 0.3s ease;
-    background: rgba(67, 69, 69, 0.2);
-    padding: 0.5rem;
+    background: rgb(90, 89, 89);
+    padding: 0.6rem;
     border-radius: 50%;
     backdrop-filter: blur(5px);
 =}
 
 .home__social-icon:hover {
-    color: #0e67e8;
+    color: #0cc6ff;
     transform: translateY(-3px);
     background: rgba(255, 255, 255, 0.2);
+
 }
 
 /* Hide label by default */
 .social-label {
     display: none;
     position: absolute;
-    top: 9px;
+    top: 12px;
     right: 100%; /* Position the label next to the icon */
     margin-left: 0.5rem;
     font-size: 16px;
