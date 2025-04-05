@@ -110,8 +110,8 @@ const Data = () => {
         </svg>
       </h1>
 
-      <h3 className="home__subtitle">Full Stack Developer</h3>
-      <p className="home__description">Passionate Full Stack Developer skilled in building scalable web and mobile applications using modern technologies.</p>
+      <h3 className="home__subtitle">Frontend Developer</h3>
+      <p className="home__description">Passionate Frontend Developer skilled in building scalable web and mobile applications using modern technologies.</p>
 
       <a href="" className="button button--flex">
         Say Hello

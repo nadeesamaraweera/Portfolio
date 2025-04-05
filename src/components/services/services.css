@@ -1,7 +1,7 @@
 .services__container {
     grid-template-columns: repeat(3, 270px);
     justify-content: center;
-    column-gap: 1..8rem;
+    column-gap: 1.8rem;
 }
 
 .services__content {

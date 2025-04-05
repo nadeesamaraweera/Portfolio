@@ -2,7 +2,6 @@
     position: relative;
     min-height: 100vh;
     overflow: hidden;
-    background: white;
 }
 
 .parallax-container {
@@ -119,7 +118,7 @@
 .home__social {
     display: grid;
     grid-template-columns: max-content;
-    row-gap: 1rem;
+    row-gap: 1.5rem;
     position: relative;
     z-index: 10;
 
@@ -127,7 +126,7 @@
 
 .home__social-icon {
     font-size: 1.25rem;
-    color: #000000;
+    color: #ffffff;
     transition: all 0.3s ease;
     background: rgba(67, 69, 69, 0.2);
     padding: 0.5rem;
@@ -141,12 +140,36 @@
     background: rgba(255, 255, 255, 0.2);
 }
 
+
+/* Hide label by default */
+.social-label {
+    display: none;
+    position: absolute;
+    top: 7px;
+    right: 100%; /* Position the label next to the icon */
+    margin-left: 0.5rem;
+    font-size: var(--h3-font-size);
+}
+
+/* Show label only when hovering the specific icon */
+.home__social-icon.github:hover .social-label {
+    display: inline;
+}
+
+.home__social-icon.linkedin:hover .social-label {
+    display: inline;
+}
+
+.home__social-icon.instagram:hover .social-label {
+    display: inline;
+}
+
+
 .home__title {
     font-size: var(--big-font-size);
     margin-bottom: var(--mb-0-25);
     background: linear-gradient(45deg, #353434, #353637);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     text-shadow: 0 0 20px rgba(87, 210, 255, 0.3);
 
 }
@@ -188,7 +211,6 @@
 .home__description {
     max-width: 400px;
     margin-bottom: var(--mb-3);
-    color: rgba(19, 19, 19, 0.54);
     line-height: 1.8;
 }
 
@@ -196,7 +218,7 @@
     0% {
         border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
     }
-    
+
     50% {
         border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
     }
@@ -236,6 +258,52 @@
     font-size: 1.25rem;
     color: #001e80;
 }
+
+
+.tech-tags {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Prevents interaction with the tags */
+    z-index: 5; /* Ensure it's above other layers */
+}
+
+
+.tech-tag {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+    padding: 6px 12px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #fff;
+    white-space: nowrap;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    animation: float 6s ease-in-out infinite;
+}
+
+/* Floating animation */
+@keyframes float {
+    0%, 100% {
+        transform: translate(-50%, -50%) translateY(0px);
+    }
+    50% {
+        transform: translate(-50%, -50%) translateY(-10px);
+    }
+}
+
+.tech-tag:hover {
+    transform: translate(-50%, -50%) scale(1.1);
+    background: rgba(87, 230, 255, 0.2);
+    color: #00c8ff;
+}
+
+
 
 @media screen and (max-width: 992px) {
     .home__content {
@@ -335,4 +403,6 @@
     .home__subtitle {
         font-size: calc(var(--h3-font-size) * 0.9);
     }
+
+
 }
