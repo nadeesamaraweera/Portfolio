@@ -3,6 +3,7 @@ import "./about.css";
 import AboutImg from "../../assets/about.jpg";
 
 const About = () => {
+
   return (
       <section className="about section" id="about">
         <h2 className="section__title">About Me👩‍🎓</h2>

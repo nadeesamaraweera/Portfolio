@@ -9,9 +9,9 @@ const Services = () => {
     }
 
   return (
-    <div className="section Services section" id="services">
+    <section className="section Services section" id="services">
         <h2 className="section__title">Services 💼</h2>
-        <span className="section__subtitle">What I Offfer</span>
+        <span className="section__subtitle">What I Offer</span>
 
         <div className="services__container container grid">
             {/* Service card - UI/UX Design */}
@@ -21,8 +21,8 @@ const Services = () => {
                     <h3 className="services__title">UI/UX <br /> Design</h3>
                 </div>
                 <span className="services__button" onClick={() => toggleTab(2)}>
-        View More <i className="uil uil-arrow-right services__button-icon"></i>
-    </span>
+                    View More <i className="uil uil-arrow-right services__button-icon"></i>
+                </span>
 
                 <div className={toggleState === 2 ? "services__modal active-modal" : "services__modal"}>
                     <div className="services__modal-content">
@@ -144,7 +144,7 @@ const Services = () => {
             </div>
 
         </div>
-    </div>
+    </section>
 
   );
 };
