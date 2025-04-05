@@ -7,12 +7,15 @@ import ScrollDown from './ScrollDown';
 import profileImg from '../../assets/my.jpg';
 
 const techStack = [
-    { name: "React", angle: 60 },
+    { name: "Java", angle: 0 },
+    { name: "Python", angle: 60 },
     { name: "JavaScript", angle: 120 },
     { name: "CSS", angle: 180 },
     { name: "HTML", angle: 240 },
     { name: "Node.js", angle: 300 },
-    { name: "MongoDB", angle: 360 },
+    { name: "MySql", angle: 360 },
+    { name: "React", angle: 420 },
+    { name: "React Native", angle: 480 },
 ];
 
 const Home = () => {
@@ -57,8 +60,10 @@ const Home = () => {
                         <div className="tech-tags">
                             {techStack.map((tech, index) => {
                                 // Calculate the positions based on the angle
-                                const radius = 100; // The radius of the circle
-                                const angleInRadians = tech.angle * (Math.PI / 180);
+                                const totalTechSkills = techStack.length;
+                                const radius = 180; // The radius of the circle
+                                const angleSpacing = 360 / totalTechSkills; // Calculate the angle for each skill
+                                const angleInRadians = (angleSpacing * index) * (Math.PI / 180); // Use the calculated angle spacing
                                 const x = Math.cos(angleInRadians) * radius;
                                 const y = Math.sin(angleInRadians) * radius;
 
@@ -67,11 +72,11 @@ const Home = () => {
                                         key={index}
                                         className="tech-tag"
                                         style={{
-                                            top: `calc(100% + ${y}px)`,
-                                            left: `calc(100% + ${x}px)`,
+                                            top: `calc(50% + ${y}px)`,  // Centered vertically
+                                            left: `calc(50% + ${x}px)`, // Centered horizontally
                                         }}
                                     >
-                                        {tech.name}
+                                         {tech.name}
                                     </span>
                                 );
                             })}
