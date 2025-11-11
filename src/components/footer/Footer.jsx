@@ -21,7 +21,7 @@ const Footer = () => {
                 </a>
             </div>
 
-            <span className="footer__copy">&#169;2025 Nadeesha Samaraweera. All rigths reserved</span>
+            <span className="footer__copy">&#169;2026 Nadeesha Samaraweera. All rigths reserved</span>
         </div>
     </footer>
   )

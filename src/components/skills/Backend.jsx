@@ -39,6 +39,13 @@ const Backend = () => {
                         <h3 className="skills__name">JavaEE</h3>
                     </div>
                 </div>
+
+                <div className="skills__data">
+                    <i className='bx bx-cloud'></i>
+                    <div>
+                        <h3 className="skills__name">Cloud</h3>
+                    </div>
+                </div>
             </div>
 
             <div className="skills__group">
@@ -50,14 +57,14 @@ const Backend = () => {
                 </div>
 
                 <div className="skills__data">
-                    <i className='bx bxl-mysql'></i>
+                    <i className='bx bx-data'></i>
                     <div>
                         <h3 className="skills__name">MySQL</h3>
                     </div>
                 </div>
 
                 <div className="skills__data">
-                    <i className='bx bxl-hibernate'></i>
+                    <i className='bx bx-cylinder'></i> 
                     <div>
                         <h3 className="skills__name">Hibernate</h3>
                     </div>

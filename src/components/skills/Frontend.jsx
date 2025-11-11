@@ -1,4 +1,3 @@
-
 const Frontend = () => {
     return (
         <div className="skills__content">
@@ -40,6 +39,13 @@ const Frontend = () => {
                             <h3 className="skills__name">Bootstrap</h3>
                         </div>
                     </div>
+
+                    <div className="skills__data">
+                        <i className='bx bxl-flutter'></i>
+                        <div>
+                            <h3 className="skills__name">Flutter</h3>
+                        </div>
+                    </div>
                 </div>
 
                 <div className="skills__group">
@@ -77,8 +83,16 @@ const Frontend = () => {
                             <h3 className="skills__name">jQuery</h3>
                         </div>
                     </div>
+
+                    <div className="skills__data">
+                        <i className='bx bxl-react'></i>
+                        <div>
+                            <h3 className="skills__name">Next.js</h3>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    )}
+    )
+}
 export default Frontend

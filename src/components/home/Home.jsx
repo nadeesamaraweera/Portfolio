@@ -16,6 +16,8 @@ const techStack = [
     { name: "MySql", angle: 360 },
     { name: "React", angle: 420 },
     { name: "React Native", angle: 480 },
+    { name: "MongoDB", angle: 540 },
+    { name: "Flutter", angle: 60.0 },
 ];
 
 const Home = () => {
