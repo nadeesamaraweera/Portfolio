@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nadeesamaraweera.netlify.app/sitemap.xml
